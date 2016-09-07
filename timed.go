@@ -5,11 +5,11 @@ import (
 	"time";
 )
 
-// Optional pareamenters?
+// Optional params?
 // See http://stackoverflow.com/questions/2032149/optional-parameters
 // http://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis
 
-func timed(f func(args []string)) func(args []string) {
+func Timed(f func(args []string)) func(args []string) {
 
 	return func(args []string) {
 		p := fmt.Println
