@@ -1,1 +1,1 @@
-# Naive implementation of time monitoring tool in Go lang
+# Naive implementation of time monitoring package in Go lang

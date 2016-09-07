@@ -1,4 +1,4 @@
-package time_monitor
+package time_monitoring
 
 import (
 	"fmt";
