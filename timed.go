@@ -3,6 +3,7 @@ package time_monitoring
 import (
 	"fmt";
 	"time";
+	// "reflect";
 )
 
 // Optional params?
@@ -18,7 +19,8 @@ func Timed(f func(args []string)) func(args []string) {
 		f(args)
 		finish := time.Now()
 		fmt.Println("Finished at ", finish)
-		p("Elapsed: ", finish.Sub(start))
+		elapsed := finish.Sub(start)
+		p("Elapsed: ", elapsed.Seconds())
 	}
 
 }
